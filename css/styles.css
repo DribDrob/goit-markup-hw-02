@@ -1,0 +1,58 @@
+:root {
+   --main-title-color: #212121;
+   --secondary-title-color: #ffffff;
+   --main-logo-color: #000000;
+   --secondary-logo-color: #ffffff;
+   --accent-color: #2196f3;
+   --main-text-color: #757575;
+   --main-link-color: #757575;
+   --secondary-link-color: #ffffff;
+   --btn-text-color: #ffffff;
+   --btn-bgr-color: #2196f3;
+   --main-bgr-color: #e5e5e5;
+   --secondary-bgr-color: #2f303a;
+   --header-bgr-color: #ffffff;
+   --team-bgr-color: #f5f4fa;
+}
+body {
+   font-family: 'Roboto', sans-serif;
+   letter-spacing: 0.03em;
+}
+.list {
+   list-style: none;
+}
+.link {
+   text-decoration: none;
+}
+.header-logo {
+   font-family: Raleway;
+   font-weight: 700;
+   font-size: 26px;
+   line-height: 1.19;
+   color: var(--main-logo-color);
+}
+.accent {
+   color: var(--accent-color);
+}
+.nav-link {
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 1.14;
+   letter-spacing: 0.02em;
+   color: var(--main-title-color);
+}
+.nav-link:hover,
+.nav-link:focus {
+   color: var(--accent-color);
+}
+.contact-link {
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 1.14;
+   letter-spacing: 0.02em;
+   color: var(--main-link-color);
+}
+.contact-link:hover,
+.contact-link:focus {
+   color: var(--accent-color);
+}
