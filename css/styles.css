@@ -10,14 +10,15 @@
    --third-link-color: rgba(255, 255, 255, 0.6);
    --btn-text-color: #ffffff;
    --btn-bgr-color: #2196f3;
-   --main-bgr-color: #e5e5e5;
+   --btn-text-second-color: #212121;
+   --btn-bgr-second-color: #ffffff;
    --secondary-bgr-color: #2f303a;
-   --header-bgr-color: #ffffff;
    --team-bgr-color: #f5f4fa;
 }
 body {
    font-family: 'Roboto', sans-serif;
    letter-spacing: 0.03em;
+   color: var(--main-title-color);
 }
 .list {
    list-style: none;
@@ -25,10 +26,19 @@ body {
 .link {
    text-decoration: none;
 }
-/* ----------------HEADER--------------------------- */
-.header {
-   background-color: var(--header-bgr-color);
+.visually-hidden {
+   position: absolute;
+   white-space: nowrap;
+   width: 1px;
+   height: 1px;
+   overflow: hidden;
+   border: 0;
+   padding: 0;
+   clip: rect(0 0 0 0);
+   clip-path: inset(50%);
+   margin: -1px;
 }
+/* ---------------------------------HEADER---------------------------- */
 .header-logo {
    font-family: Raleway;
    font-weight: 700;
@@ -64,7 +74,99 @@ body {
 .contact-link:focus {
    color: var(--accent-color);
 }
-/* ----------------FOOTER--------------------------- */
+/* ---------------------------HERO--------------------------- */
+.hero {
+   background-color: var(--secondary-bgr-color);
+}
+.hero-title {
+   font-weight: 900;
+   font-size: 44px;
+   line-height: 1.36;
+   text-align: center;
+   letter-spacing: 0.06em;
+   text-transform: uppercase;
+   color: var(--secondary-title-color);
+}
+.button {
+   font-family: inherit;
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 1.87;
+   display: flex;
+   align-items: center;
+   text-align: center;
+   letter-spacing: 0.06em;
+   color: var(--btn-text-color);
+   background-color: var(--btn-bgr-color);
+   cursor: pointer;
+}
+/* ---------------------------ADVANTAGE SECTION2----------------- */
+.advantage-title {
+   font-size: 14px;
+   line-height: 1.14;
+   text-transform: uppercase;
+}
+.advantage-text {
+   font-size: 14px;
+   line-height: 1.71;
+   color: var(--main-text-color);
+}
+/* ---------------------------OUR WORK-------------------------- */
+.work-title {
+   font-size: 36px;
+   line-height: 1.17;
+   text-align: center;
+}
+/* ----------------------------TEAM------------------------------ */
+.team {
+   background-color: var(--team-bgr-color);
+}
+.team-title {
+   font-size: 36px;
+   line-height: 1.17;
+   text-align: center;
+}
+.team-name {
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 1.19;
+   text-align: center;
+}
+.team-position {
+   font-size: 16px;
+   line-height: 1.19;
+   text-align: center;
+   color: var(--main-text-color);
+}
+/* ----------------------------PORTFOLIO--------------------------*/
+.filter-btn {
+   font-family: inherit;
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 1.62;
+   text-align: center;
+   color: var(--btn-text-second-color);
+   background-color: var(--btn-bgr-second-color);
+   cursor: pointer;
+}
+.filter-btn:hover,
+.filter-btn:focus {
+   color: var(--btn-text-color);
+   background-color: var(--btn-bgr-color);
+}
+.portfolio-titles {
+   font-size: 18px;
+   line-height: 2;
+   letter-spacing: 0.06em;
+}
+
+.portfolio-category {
+   font-size: 16px;
+   line-height: 1.87;
+   color: var(--main-text-color);
+}
+
+/* ----------------------------FOOTER--------------------------- */
 .footer {
    background-color: var(--secondary-bgr-color);
 }
